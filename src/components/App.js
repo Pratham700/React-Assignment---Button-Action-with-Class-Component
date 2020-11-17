@@ -4,17 +4,14 @@ import '../styles/App.css';
 class App extends Component {
     constructor(props) {
 		super(props);
-		this.state = { 
-			visibility : false
-		} ;
+		this.state = {visibility : false} 
+		this.showPara = this.showPara.bind(this) ;
 	};
 
-	showPara() {
-		this.setState(
-			{
-				visibility:true
-			}) ;
+	showPara(){
+		this.setState({visibility:true}) ;
 	} 
+
 
     render() {
     	return(
